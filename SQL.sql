@@ -3,7 +3,7 @@ CREATE TABLE employees (
     emp_id INTEGER PRIMARY KEY NOT NULL,                          -- emp_id: integer, primary key, cannot be NULL
     emp_name TEXT NOT NULL,                                        -- emp_name: text, cannot be NULL
     age INTEGER CHECK (age >= 18),                                 -- age: integer, check constraint for minimum age 18
-    email TEXT UNIQUE,                                             -- email: text, must be unique
+   Email VARCHAR(255) UNIQUE,                                             -- email: text, must be unique
     salary DECIMAL DEFAULT 30000                                   -- salary: decimal, with a default value of 30,000
 );
 
